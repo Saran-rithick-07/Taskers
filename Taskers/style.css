@@ -1,0 +1,97 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    display: flex;
+}
+
+.division1{
+    width: 50%;
+    height: 100vh;
+    background-color: grey;
+}
+
+.division2{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rembox{
+    display: flex;
+    gap: 10px;
+}
+
+.clearance{
+    display: flex;
+    gap: 10px;
+}
+
+.up{
+    color: darkblue;
+}
+
+#Signin{
+    background-color: darkblue;
+    color: white;
+    border-radius: 10px;
+    width: 330px;
+    height: 30px;
+}
+
+.dont{
+    color:rgb(121, 121, 121) ;
+}
+
+.me{
+    color:rgb(121, 121, 121) ;
+}
+
+.note{
+    color:rgb(121, 121, 121) ;
+}
+
+.welcome{
+    font-size: 1cm;
+}
+
+#tick{
+    border: 1px solid black;
+    width: 15px;
+    height: 15px;
+}
+
+#Email{
+    height: 30px;
+}
+
+#pass{
+    height: 30px;
+}
+
+.photo{
+    display: flex;
+    width: 350px;
+    height: 350px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.imgdiv{
+    width: 700px;
+    height: 700px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}

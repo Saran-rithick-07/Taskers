@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./sign.css">
+</head>
+<body>
+  <div class="Parent">
+    <div class="container">
+        <div class="division1">
+            <div class="imgdiv"> <img class="photo" src="Images/task iamge.png" alt=""></div>
+            <div class="options">
+            <div class="firstoption">
+                <img class="fimg" src="Images/task-management.svg" alt="">
+                <p class="fname">Tasks</p>
+            </div>
+           
+            <div class="secondoption">
+                
+                <img class="simg" src="Images/96d31595-83da-4092-88d8-4c3e12aff368.jpg" alt="">
+                <p class="sname"> Categories</p>
+               
+                <div class="dropdown">
+                    <img class="arrow"  src="Images/down-arrow.svg" alt="">  
+                    <div class="dropdown-content">
+                      <a href="#">None</a>
+                      <a href="#">Home</a>
+                      <a href="#">School</a>
+                      <a href="#">Shoppiong List</a>
+                    </div>
+                  </div>
+                    
+                  
+                  </div>
+                
+            
+            <div class="thirdoption">
+                <img class="timg" src="Images/settings.jpg" alt="">
+                <p class="tname">Settings</p>
+            </div>
+            </div>
+            <!-- <div class="lastoption">
+                <img class="logoutimg" src="Images/th__3_-removebg-preview.png" alt="">
+                <p class="logout"> <b>Logout</b></p>
+            </div> -->
+        </div>
+        
+        
+        <div class="division2">
+            <div class="head"><h1>All Your tasks</h1></div>
+            <div class="main">
+               
+                <div class="subtitle">
+                    <div class="task"><h3>Tasks</h3></div>
+                    <div class="threebut">
+                    <button onclick="get1()" id="All">All</button>
+                    <button onclick="get2()" id="done">Done</button>
+                    <button onclick="get3()" id="Notdone">Not done</button>
+                    <div class="funnel"> <img class="funnelimg"   src="Images/image.png" alt=""></div>
+                    </div>
+                </div>
+
+                <div class="addtaskhead">
+                   <button class="Addtask" onclick="Addtask()"> 
+                    <img class="plus" src="Images/add-icon-sign-symbol-design-free-png-removebg-preview.png" alt="">
+                    <p class="addword"> Add a Task </p>
+                   </button>
+                </div>
+                
+                <div class="popupparent" >
+                <div class="popup1" id="popup1">
+                    <p class="insert"> Insert Name</p>
+                    <input type="text" id="Task" placeholder="Task name">
+
+                    <div class="category">
+                        <p class="namecat"> Select a Category </p>
+                        <select name="none" id="tasktype">
+                            <option value="#">Home</option>
+                            <option value="#">none</option>
+                            <option value="#">School</option>
+                            <option value="#">Shopping List</option>
+                        </select>
+
+                    </div>
+                    <div class="botbut">
+                        <button onclick="cancel()"  class="cancel">Cancel</button>
+                        <button onclick="Add()" class="Addbut">Add</button>
+                    </div>
+                </div>
+                </div>
+               
+                
+                
+
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <script>
+    function get1(){
+     document.getElementById("All").style.color = "black";
+     document.getElementById("All").style.fontWeight = "bold";
+     document.getElementById("done").style.color = "";
+     document.getElementById("Notdone").style.color = "";
+
+    }
+
+    function get2(){
+     document.getElementById("done").style.color = "black";
+     document.getElementById("done").style.fontWeight = "bold";
+     document.getElementById("All").style.color = "";
+     document.getElementById("Notdone").style.color = "";
+
+    }
+
+    function get3(){
+     document.getElementById("Notdone").style.color = "black";
+     document.getElementById("Notdone").style.fontWeight = "bold";
+     document.getElementById("done").style.color = "";
+     document.getElementById("All").style.color = "";
+
+    }
+
+    function Addtask(){
+        var add = document.getElementById("popup1");
+        add.style.display = "block";
+    }
+
+    function cancel(){
+        var cancel = document.getElementById("popup1");
+        cancel.style.display = "none";
+    }
+
+
+
+    
+    </script>
+</body>
+</html>

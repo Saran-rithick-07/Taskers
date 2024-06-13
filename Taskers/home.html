@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="parent">
+        <div class="container">
+            <div class="division1">
+               <div class="imgdiv"> <img class="photo" src="Images/task iamge.png" alt=""></div>
+            </div>
+            <div class="division2">
+                <div class="main">
+                    <div class="welcome"> <b>Welcome to Taskers</b></div>
+                    <div class="note"> Please insert your information to access your tasks.</div>
+                    <label for="Email"> Email</label>
+                    <input class="emailbox"  type="text" id="Email" placeholder="user@gmail.com">
+                    <label for="Pass"> Password</label>
+                    <input class="emailbox"  type="password" id="pass" placeholder="Enter your password">
+                    <div class="rembox">
+                        <input type="checkbox" id="tick">
+                        <div class="me">Remember Me</div>
+                    </div>
+                    <button onclick="get()" id="Signin"> Sign in</button>
+                    <div class="clearance">
+                        <div class="dont">Dont Have an Account?</div>
+                        <div class="up"> Sign Up</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+
+        function get(){
+        var email = document.getElementById("Email").value;
+        var pass = document.getElementById("pass").value;
+
+        if(email.length>=6 && (pass.length>=6 && pass.length<=16))
+        {
+            window.location.href="sign.html";       
+        }
+        }
+    </script>
+
+    
+</body>
+</html>
